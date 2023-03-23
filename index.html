@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ejemplo PDF</title>
+<style>
+#boton{
+  font-family: Comfortaa;
+  color: #FFF;
+  background-color: #1b1b1b;
+  padding: 14px 20px 14px 20px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border-style:solid;
+  border-radius:70px;
+  cursor:pointer;
+}
+#boton:hover{
+  transition: ease-in-out;
+  transition-duration:0.14s;
+  box-shadow: 0 0 14px #FFF;
+  background-color: #009eff;
+}
+#titulo{
+  text-shadow: 0 0 14px #FFF;
+  margin-bottom: 35px;
+}
+#casilla{
+  background-color: #1b1b1b;
+  color: #FFF;
+  border-style:solid;
+  border-radius: 21px;
+  padding: 7px 21px 7px 21px ;
+}
+select{
+  background-color: #2b2b2b;
+  color:#FFF;
+  border-style:solid;
+  border-radius: 21px;
+  padding: 7px 21px 7px 21px;
+  cursor: pointer;
+}
+</style>
+
+  </head>
+  <body style="background-color: #1b1b1b; color: #FFF; font-family: Comfortaa">
+    <!-- <h1>Ejemplo</h1>
+    <form action="pdf.php" method="post">
+      <label for="name">Nombre</label>
+      <input type="text" name="name" id="name">
+
+      <label for="quality">quality</label>
+      <input type="text" name="quality" id="quality">-->
+<center> 
+
+  <h1 id="titulo">Creador de Formularios 3.0 de Gregorio Designer</h1>
+  
+
+  <!--primera seccion formulario-->
+  
+  <h2>Ingrese los datos del remitido</h2>
+  
+  <form action="pdf.php" method="POST" > <!--Ininio del formulario-->
+
+    <select name="cargo" id="cargo">
+      <option value="/!\Error Casilla Limpia/!\">Cargo</option>
+      <option value="Licenciado/a">Licenciado/a</option>
+      <option value="Ingeniero/a">Ingeniero/a</option>
+      <option value="Profesor/a">Profesor/a</option>
+    </select>
+    <input id="casilla" type="text" name="nombre" placeholder="Nombre">
+    <input id="casilla" type="text" name="apellido" placeholder="Apellido">
+
+  <!--Seccion para colocar ubicacion de la primera parte--> 
+  <h2>Ingrese sus datos de ubicación</h2>
+
+  <select name="estado" id="estado">
+    <option value="Trujillo">Trujillo</option>
+  </select>
+  <select name="municipio" id="municipio">
+    <option value="/!\Error Casilla Limpia/!\">Municipio</option>
+    <option value="Miranda">Miranda</option>
+    <option value="Valera">Valera</option>
+  </select>
+  <select name="parroquia" id="parroquia">
+    <option value="/!\Error Casilla Limpia/!\">Parroquia o Ciudad</option>
+    <option value="El Dividive">El Dividive</option>
+    <option value="Valera">Valera</option>
+  </select>
+  <br>
+
+  <!--Segunda seccion para rellenar los datos-->
+  <h2>Datos del remitente</h2>
+ 
+    <select name="cargo1">
+      <option value="/!\Error Casilla Limpia/!\">Cargo</option>
+      <option value="Licenciado/a">Licenciado/a</option>
+      <option value="Ingeniero/a">Ingeniero/a</option>
+      <option value="Profesor/a">Profesor/a</option>
+      <option value="Estudiante">Estudiante</option>
+    </select>
+    <input id="casilla" type="text" name="nombre1" placeholder="Nombre">
+    <input id="casilla" type="text" name="apellido1" placeholder="Apellido">
+
+
+    <!--Seccion de fecha de la invitacion-->
+    <h2>Fecha</h2>
+      <input id="casilla" type="date" name="dd">
+      <br>
+
+    <!--Botones de crear o Limpiar-->
+    <input type="submit" name="aceptar" id="boton" value="Generar PDF">
+    <input type="reset" name="reset" id="boton" value="Limpiar">
+
+  </form> <!--Final del formulario-->
+</center>
+
+
+<!--<button>Generar PDF</button>-->
+    </form>
+  </body>
+</html>
