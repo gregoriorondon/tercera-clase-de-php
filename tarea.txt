@@ -1,7 +1,0 @@
-ciudadano cargo nombre apellido
-
-blalba
-
-fecha
-
-datos de nosotros
