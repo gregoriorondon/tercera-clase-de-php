@@ -12,4 +12,4 @@ DOMPDF :point_right: [https://github.com/dompdf/dompdf](https://github.com/dompd
 
 Por si eres nuevo en la programación web, el archivo *index.html* es el archivo de inicio, en este proyecto allí encontraras las entradas de los datos que quieras insertar en el PDF. El archivo *prueba.html* estará la plantilla que contiene los espacios en blanco para la información ingresada en el archivo index.html. Y finalmente, el archivo *pdf.php* es donde se produce la conversión de HTML y PHP a PDF, allí están todas las variables (códigos) que hacen que la librería haga su trabajo, pero si quieres modificar como se vería o que funciones extras quieres colocar para mejorar este proyecto para que se adapte al tuyo, lo puedes hacer con las instrucciones que están en el repositorio de [DOMPDF](https://github.com/dompdf/dompdf).
 
-Espero que esté proyecto te sea de gran ayuda para algún proyecto que tengas. 
+Espero que éste proyecto te sea de gran ayuda para algún proyecto que tengas. 
